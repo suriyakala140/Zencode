@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Style -->
+     <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+     <!-- Contact Section -->
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}" />
+          <input type="email" id="email" name="email" placeholder="Email Address" required />
+          <select id="lookingFor" name="lookingFor" required>
+            <option value="">Looking For...</option>
+            <option value="Service">Service</option>
+            <option value="Support">Support</option>
+            <option value="Partnership">Partnership</option>
+          </select>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form><br><br><br>────────────────────────────────────────────────
+</body>
+</html>
